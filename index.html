@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vos prestataires de mariage en Occitanie</title>
+<meta name="description" content="Photographe, DJ, gâteau, traiteur, déco… Dites-nous ce qu'il vous manque pour votre mariage en Occitanie, on vous trouve gratuitement des prestataires disponibles à votre date.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#2a1f33;--muted:#6b5660;--line:#ecd9d2;--bg:#fbefe9;--soft:#f6ddd4;--accent:#2a1f33;--rose:#d9786b;}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:17px}
+  .wrap{max-width:560px;margin:0 auto;padding:0 20px}
+  header{padding:56px 0 28px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:700;letter-spacing:-.015em;font-size:clamp(34px,8vw,46px);line-height:1.08;letter-spacing:-.01em}
+  .intro{margin-top:16px;color:var(--muted)}
+  .steps{display:grid;gap:10px;margin:28px 0 8px;padding:18px 20px;background:var(--soft);border-radius:12px;font-size:15.5px}
+  .steps b{color:var(--rose)}
+  form{padding:24px 0 48px;display:grid;gap:22px}
+  label{display:block;font-weight:600;font-size:15.5px;margin-bottom:8px}
+  .opt{font-weight:400;color:var(--muted)}
+  input[type=text],input[type=date],input[type=tel],input[type=email],select,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+  .choices{display:flex;flex-wrap:wrap;gap:8px}
+  .choices label{font-weight:400;margin:0;display:flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--line);border-radius:999px;font-size:15px;cursor:pointer}
+  .choices input{accent-color:var(--accent)}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:400;color:var(--muted)}
+  .consent input{margin-top:4px;accent-color:var(--accent)}
+  button{font:inherit;font-weight:600;font-size:17px;padding:16px;border:0;border-radius:12px;background:var(--accent);color:#fff;cursor:pointer}
+  button:hover{filter:brightness(1.08)}
+  footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:13.5px;color:var(--muted)}
+  header h1{animation:rise .7s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){header h1{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="-110 -140 220 250" width="64" aria-label="Mariage Occitanie" style="margin-bottom:18px"><circle r="92" fill="none" stroke="#d9786b" stroke-width="13"/><path d="M0,-132 L18,-112 L0,-92 L-18,-112 Z" fill="#d9786b"/><text x="0" y="24" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="74" letter-spacing="-2" fill="#2a1f33">MO</text></svg>
+    <h1>Trouvez vos prestataires de mariage en Occitanie</h1>
+    <p class="intro">Photographe, DJ, gâteau, traiteur, déco… Dites-nous ce qu'il vous manque. On vous trouve des prestataires disponibles à votre date, près de chez vous. C'est gratuit pour vous.</p>
+    <div class="steps">
+      <div><b>1.</b> Vous remplissez le formulaire (1 minute)</div>
+      <div><b>2.</b> On cherche les prestataires libres à votre date</div>
+      <div><b>3.</b> On vous envoie leurs contacts, vous choisissez</div>
+    </div>
+  </header>
+
+  <!-- Les demandes arrivent sur occitaniemariage@gmail.com (formsubmit.co envoie un mail de confirmation au 1er envoi) -->
+  <form action="https://formsubmit.co/occitaniemariage@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nouvelle demande mariage">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="merci.html">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+    <div><label for="prenoms">Vos prénoms</label>
+      <input id="prenoms" name="Prénoms" type="text" placeholder="Léa et Thomas" required></div>
+
+    <div><label for="date">Date du mariage</label>
+      <input id="date" name="Date du mariage" type="date" required></div>
+
+    <div><label for="lieu">Ville ou lieu de réception</label>
+      <input id="lieu" name="Lieu" type="text" placeholder="Domaine de…, Toulouse, Albi…" required></div>
+
+    <div><label>Ce que vous cherchez</label>
+      <div class="choices">
+        <label><input type="checkbox" name="Besoins" value="Photographe"> Photographe</label>
+        <label><input type="checkbox" name="Besoins" value="Vidéaste"> Vidéaste</label>
+        <label><input type="checkbox" name="Besoins" value="DJ / musique"> DJ / musique</label>
+        <label><input type="checkbox" name="Besoins" value="Traiteur"> Traiteur</label>
+        <label><input type="checkbox" name="Besoins" value="Gâteau / pièce montée"> Gâteau / pièce montée</label>
+        <label><input type="checkbox" name="Besoins" value="Fleurs / décoration"> Fleurs / décoration</label>
+        <label><input type="checkbox" name="Besoins" value="Lieu de réception"> Lieu de réception</label>
+        <label><input type="checkbox" name="Besoins" value="Coiffure / maquillage"> Coiffure / maquillage</label>
+        <label><input type="checkbox" name="Besoins" value="Officiant de cérémonie laïque"> Officiant de cérémonie laïque</label>
+        <label><input type="checkbox" name="Besoins" value="Autre"> Autre</label>
+      </div></div>
+
+    <div><label for="invites">Nombre d'invités <span class="opt">(à peu près)</span></label>
+      <input id="invites" name="Invités" type="text" inputmode="numeric" placeholder="80"></div>
+
+    <div><label for="details">Précisez vos envies <span class="opt">(style, budget, ce qui compte pour vous)</span></label>
+      <textarea id="details" name="Détails" rows="4" placeholder="Ex. : photographe plutôt naturel, budget autour de 1 500 €. Gâteau pour 80 personnes, sans gluten."></textarea></div>
+
+    <div><label for="tel">Votre téléphone</label>
+      <input id="tel" name="Téléphone" type="tel" placeholder="06 …" required></div>
+
+    <div><label for="email">Votre email <span class="opt">(facultatif)</span></label>
+      <input id="email" name="Email" type="email"></div>
+
+    <div><label for="source">Comment vous nous avez trouvés ? <span class="opt">(facultatif)</span></label>
+      <input id="source" name="Source" type="text" placeholder="Groupe Facebook, Instagram, un ami…"></div>
+
+    <label class="consent"><input type="checkbox" required> J'accepte que mes informations soient transmises à des prestataires de mariage pour qu'ils me recontactent. Elles ne servent à rien d'autre et ne sont jamais vendues.</label>
+
+    <button type="submit">Trouver mes prestataires</button>
+  </form>
+
+  <footer>Mariage Occitanie, service de mise en relation gratuit pour les couples, géré par Evan. Contact : occitaniemariage@gmail.com. Vos informations sont uniquement transmises aux prestataires concernés. Pour les faire supprimer, il suffit de répondre au message que vous recevrez.</footer>
+</div>
+</body>
+</html>
